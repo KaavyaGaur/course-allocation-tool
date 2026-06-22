@@ -17,6 +17,80 @@ from solver import load_data, solve_allocation
 
 st.set_page_config(page_title="Faculty Course Allocation", layout="wide")
 
+# ----------------------------------------------------------------------------
+# CUSTOM CSS — layout/look tweaks that Streamlit's theme config can't do.
+# Edit colors/spacing here directly; this is plain CSS.
+# ----------------------------------------------------------------------------
+st.markdown("""
+<style>
+    /* Import a clean Google Font */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+    html, body, [class*="css"]  {
+        font-family: 'Inter', sans-serif;
+    }
+
+    /* Page title */
+    h1 {
+        font-weight: 700 !important;
+        color: #0D2C54;
+        padding-bottom: 0.2rem;
+    }
+
+    /* Section headers (st.header / st.subheader) */
+    h2, h3 {
+        font-weight: 600 !important;
+        color: #14365E;
+        margin-top: 1.2rem;
+    }
+
+    /* Add breathing room around the main content block */
+    .block-container {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+        max-width: 1200px;
+    }
+
+    /* Primary buttons (Run Allocation, Download) */
+    .stButton > button, .stDownloadButton > button {
+        border-radius: 8px;
+        font-weight: 600;
+        padding: 0.5rem 1.2rem;
+        border: none;
+    }
+    .stButton > button[kind="primary"] {
+        background-color: #1565C0;
+    }
+    .stButton > button[kind="primary"]:hover {
+        background-color: #0D47A1;
+    }
+
+    /* Sidebar background tweak + spacing */
+    section[data-testid="stSidebar"] {
+        padding-top: 1rem;
+    }
+
+    /* Dataframe / table corners */
+    .stDataFrame {
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    /* Metric cards (st.metric) get a subtle card look */
+    div[data-testid="stMetric"] {
+        background-color: #F0F4F8;
+        padding: 1rem;
+        border-radius: 10px;
+        border: 1px solid #DDE5ED;
+    }
+
+    /* Tabs styling */
+    .stTabs [data-baseweb="tab"] {
+        font-weight: 600;
+    }
+</style>
+""", unsafe_allow_html=True)
+
 st.title("📚 Faculty-to-Course Allocation System")
 st.caption(
     "A constraint-optimization prototype — assigns faculty to course sections "
