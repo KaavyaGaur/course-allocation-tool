@@ -1,0 +1,11 @@
+faculty_id,name,specialization_tags,max_load,current_load
+F001,Dr. A. Sharma,DBMS;DataStructures;Algorithms,3,0
+F002,Dr. B. Iyer,AI;ML;DataMining,2,0
+F003,Prof. C. Nair,OS;ComputerNetworks;DistributedSystems,3,0
+F004,Dr. D. Rao,WebTech;SoftwareEngineering;DBMS,3,0
+F005,Prof. E. Menon,AI;NLP;ML,2,0
+F006,Dr. F. Pillai,ComputerNetworks;Security;OS,3,0
+F007,Dr. G. Krishnan,Algorithms;DataStructures;CompilerDesign,2,0
+F008,Prof. H. Varma,SoftwareEngineering;WebTech;ProjectManagement,3,0
+F009,Dr. I. Joseph,ML;DataMining;Statistics,2,0
+F010,Prof. J. Thomas,DBMS;Security;ComputerNetworks,3,0

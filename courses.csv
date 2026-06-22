@@ -1,0 +1,13 @@
+course_id,course_name,required_specialization,sections,credits,time_slot
+C001,Database Management Systems,DBMS,2,4,Mon-9AM
+C002,Artificial Intelligence,AI,1,4,Tue-9AM
+C003,Operating Systems,OS,2,4,Wed-11AM
+C004,Web Technologies,WebTech,1,3,Mon-2PM
+C005,Machine Learning,ML,2,4,Tue-11AM
+C006,Computer Networks,ComputerNetworks,2,4,Wed-9AM
+C007,Data Structures,DataStructures,1,4,Thu-9AM
+C008,Software Engineering,SoftwareEngineering,1,3,Mon-9AM
+C009,Network Security,Security,1,3,Wed-9AM
+C010,Compiler Design,CompilerDesign,1,3,Thu-11AM
+C011,Natural Language Processing,NLP,1,3,Tue-9AM
+C012,Data Mining,DataMining,1,3,Fri-9AM
